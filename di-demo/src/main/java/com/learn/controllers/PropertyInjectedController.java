@@ -3,14 +3,14 @@ package com.learn.controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
-import com.learn.services.GreetingServiceImpl;
+import com.learn.services.GreetingService;
 
 @Controller
 public class PropertyInjectedController {
 	@Autowired
-	public GreetingServiceImpl greetingService;
+	public GreetingService greetingServiceImpl;
 	
 	public String sayHello() {
-		return greetingService.sayGreeting();
+		return greetingServiceImpl.sayGreeting();
 	}
 }
