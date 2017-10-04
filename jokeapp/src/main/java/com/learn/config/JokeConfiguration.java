@@ -5,9 +5,9 @@ import org.springframework.context.annotation.Configuration;
 
 import guru.springframework.norris.chuck.ChuckNorrisQuotes;
 
-@Configuration
+//@Configuration
 public class JokeConfiguration {
-	@Bean
+//	@Bean
 	public ChuckNorrisQuotes chuckNorrisQuotes() {
 		return new ChuckNorrisQuotes();
 	}
