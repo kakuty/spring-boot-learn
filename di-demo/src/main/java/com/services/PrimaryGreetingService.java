@@ -1,17 +1,18 @@
-package com.learn.services;
+package com.services;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 @Service
-@Profile("vi")
 @Primary
-public class PrimaryVietnameseGreetingService implements GreetingService{
+@Profile({"en", "default"})
+public class PrimaryGreetingService implements GreetingService{
 
 	@Override
 	public String sayGreeting() {
-		return "Xin chao - Viet Nam";
+		// TODO Auto-generated method stub
+		return "Hello - Primary greeting service";
 	}
 	
 }

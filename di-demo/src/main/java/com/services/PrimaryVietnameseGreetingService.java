@@ -1,17 +1,17 @@
-package com.learn.services;
+package com.services;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 @Service
+@Profile("vi")
 @Primary
-@Profile("cn")
-public class PrimaryChineseGreetingService implements GreetingService {
+public class PrimaryVietnameseGreetingService implements GreetingService{
 
 	@Override
 	public String sayGreeting() {
-		return "你好 - 主要问候服务";
+		return "Xin chao - Viet Nam";
 	}
 	
 }

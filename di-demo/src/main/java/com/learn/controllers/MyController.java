@@ -2,7 +2,7 @@ package com.learn.controllers;
 
 import org.springframework.stereotype.Controller;
 
-import com.learn.services.GreetingService;
+import com.services.GreetingService;
 
 @Controller
 public class MyController {

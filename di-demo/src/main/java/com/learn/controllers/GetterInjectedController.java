@@ -4,8 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
-import com.learn.services.GreetingService;
-import com.learn.services.GreetingServiceImpl;
+import com.services.GreetingService;
+import com.services.GreetingServiceImpl;
 
 @Controller
 public class GetterInjectedController {
