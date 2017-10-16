@@ -3,7 +3,7 @@ package com.learn.examplebean;
 public class FakeDataSource {
 	private String username;
 	private String password;
-	private String url;
+	private String dburl;
 	
 	public String getUsername() {
 		return username;
@@ -18,10 +18,10 @@ public class FakeDataSource {
 		this.password = password;
 	}
 	public String getUrl() {
-		return url;
+		return dburl;
 	}
 	public void setUrl(String url) {
-		this.url = url;
+		this.dburl = url;
 	}
 	
 }
