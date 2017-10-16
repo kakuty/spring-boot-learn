@@ -1,0 +1,7 @@
+# This is a comment
+
+learner:
+    uc:
+        username: uckaka
+        password: ucpass
+        dburl: someucurl
