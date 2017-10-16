@@ -5,3 +5,11 @@ learner:
         username: uckaka
         password: ucpass
         dburl: someucurl
+
+---
+spring:
+    profiles: de
+learner:
+    uc:
+        username: uckaka $$$ in Germany
+
