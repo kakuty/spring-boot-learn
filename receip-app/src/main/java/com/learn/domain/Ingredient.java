@@ -3,10 +3,12 @@ package com.learn.domain;
 import java.math.BigDecimal;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 
 @Entity
 public class Ingredient {
@@ -15,6 +17,9 @@ public class Ingredient {
 	private Long id;
 	private String description;
 	private BigDecimal amount;
+	
+	@OneToOne(fetch = FetchType.EAGER)
+	private UnitOfMeasure unitOfMesure;
 	
 	@ManyToOne
 	private Recipe recipe;
@@ -49,6 +54,14 @@ public class Ingredient {
 
 	public void setRecipe(Recipe recipe) {
 		this.recipe = recipe;
+	}
+
+	public UnitOfMeasure getUnitOfMesure() {
+		return unitOfMesure;
+	}
+
+	public void setUnitOfMesure(UnitOfMeasure unitOfMesure) {
+		this.unitOfMesure = unitOfMesure;
 	}
 	
 }
